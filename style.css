@@ -1,0 +1,127 @@
+/* Tema escuro */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilização do cabeçalho */
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #1e1e1e;
+}
+
+header button {
+  background-color: #d32f2f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #b71c1c;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid #333333;
+  padding: 10px;
+}
+
+th {
+  background-color: #1e1e1e;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #222222;
+}
+
+/* Estilização dos botões de números de série */
+.btn-serie {
+  margin: 2px;
+  padding: 5px;
+  background-color: #007bff;
+  /* Cor padrão */
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-serie:hover {
+  background-color: #0056b3;
+  /* Cor ao passar o mouse */
+}
+
+/* Estilização para números de série duplicados */
+.btn-serie.duplicado {
+  background-color: red;
+  /* Cor para duplicados */
+}
+
+/* Dialog */
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  width: 300px;
+}
+
+dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+dialog label {
+  font-weight: bold;
+}
+
+dialog select,
+dialog input {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+menu button {
+  background-color: #d32f2f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+menu button:hover {
+  background-color: #b71c1c;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Andaimes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <button id="btnCadastrar">Cadastrar</button>
+  </header>
+  <main>
+    <h1>Controle de Andaimes</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Data de Retirada</th>
+          <th>Equipamento</th>
+          <th>Quantidade</th>
+          <th>Obra</th>
+          <th>Responsável</th>
+          <th>Data de Devolução</th>
+          <th>Números de Série</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </main>
+
+  <dialog id="dialogForm">
+    <form method="dialog">
+      <h2>Cadastrar Equipamento</h2>
+      <label for="equipamento">Equipamento:</label>
+      <select id="equipamento" required>
+        <option value="Andaime 1m">Andaime 1m</option>
+        <option value="Andaime 1,5m">Andaime 1,5m</option>
+        <option value="Plataforma 1m">Plataforma 1m</option>
+        <option value="Plataforma 1,5m">Plataforma 1,5m</option>
+        <option value="Diagonal 1m">Diagonal 1m</option>
+        <option value="Diagonal 1,5m">Diagonal 1,5m</option>
+        <option value="Sapata Ajustavel">Sapata Ajustavel</option>
+        <option value="Forcado Simples">Forcado Simples</option>
+        <option value="Forcado Duplo">Forcado Duplo</option>
+        <option value="Viga 1,5m">Viga 1,5m</option>
+        <option value="Viga 3m">Viga 3m</option>
+        <option value="Escora">Escora</option>
+        <option value="Guarda corpo com porta 1m">Guarda corpo com porta 1m</option>
+        <option value="Guarda corpo sem porta 1m">Guarda corpo sem porta 1m</option>
+        <option value="Guarda corpo sem porta 1m encaixe">Guarda corpo sem porta 1m encaixe</option>
+        <option value="Guarda corpo com porta 1,5m">Guarda corpo com porta 1,5m</option>
+        <option value="Guarda corpo sem porta 1,5m">Guarda corpo sem porta 1,5m</option>
+        <option value="Guarda corpo sem porta 1,5m encaixe">Guarda corpo sem porta 1,5m encaixe</option>
+        <option value="Escada">Escada</option>
+      </select>
+
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade" required min="1">
+
+      <label for="obra">Obra:</label>
+      <input type="text" id="obra" required>
+
+      <label for="responsavel">Responsável:</label>
+      <input type="text" id="responsavel" required>
+
+      <label for="dataRetirada">Data da Retirada:</label>
+      <input type="date" id="dataRetirada" required>
+
+      <label for="dataDevolucao">Data de Devolução:</label>
+      <input type="date" id="dataDevolucao" required>
+
+      <menu>
+        <button id="btnSalvar" type="submit">Salvar</button>
+        <button id="btnCancelar" type="reset">Cancelar</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <dialog id="dialogSeries">
+    <form method="dialog">
+      <h2>Preencher Números de Série</h2>
+      <div id="seriesContainer"></div>
+      <menu>
+        <button id="btnSalvarSeries" type="submit">Salvar</button>
+        <button id="btnCancelarSeries" type="reset">Cancelar</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
